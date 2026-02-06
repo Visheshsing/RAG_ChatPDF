@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException, UploadFile, File, Form, BackgroundTa
 from fastapi.middleware.cors import CORSMiddleware # <--- NEW: Standard Security
 from pydantic import BaseModel
 from langchain_core.messages import HumanMessage
-from packages.graph import app_graph
+from backend.packages.graph import app_graph
 from packages.ingestion import ingest_data 
 
 app = FastAPI(title="Professional RAG API")
